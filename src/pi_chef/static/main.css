@@ -1,0 +1,62 @@
+html, body {
+    height: 100%;
+  }
+
+#recipes {
+    display: block;
+    height: 100%;
+    background-color: aquamarine;
+}
+#recipe {
+    display: none;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+#new-recipe {
+    display: none;
+    height: 100%;
+    background-color: brown;
+}
+
+.recipe-card {
+    background-color: rgb(91, 71, 182);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.card-header {
+    height: 20px;
+    text-align: center;
+    padding: 15px;
+}
+.card-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+}
+
+#recipe-header {
+    text-align: center;
+}
+.exit {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+#ingredients {
+    padding-left: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#steps {
+    padding-left: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#ingredients-header{
+    text-align: center;
+}
+#steps-header{
+    text-align: center;
+}
