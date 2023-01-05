@@ -10,6 +10,8 @@ html, body {
 #recipe {
     display: none;
     height: 100%;
+    width: 800px;
+    margin: 0px auto;
     /* background-color: blueviolet; */
 }
 #new-recipe {
@@ -42,21 +44,24 @@ html, body {
     text-align: center;
 }
 .exit {
+    padding-top: 15px;
     height: 30px;
     width: 30px;
     float: right;
 }
 #ingredients {
-    padding-left: 35%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #steps {
-    padding-left: 35%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #ingredients-header{
-    text-align: center;
+    text-align: left;
 }
 #steps-header{
-    text-align: center;
+    text-align: left;
 }
