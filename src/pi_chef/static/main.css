@@ -10,7 +10,6 @@ html, body {
 #recipe {
     display: none;
     height: 100%;
-    width: 800px;
     margin: 0px auto;
     /* background-color: blueviolet; */
 }
@@ -50,6 +49,7 @@ html, body {
     float: right;
 }
 #ingredients {
+    padding-left: 45%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,8 +60,8 @@ html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #ingredients-header{
-    text-align: left;
+    text-align: center;
 }
 #steps-header{
-    text-align: left;
+    text-align: center;
 }
