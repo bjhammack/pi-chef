@@ -40,7 +40,7 @@ function get_all_recipes() {
             for (var i = 0; i < recipeCount; i++) {
                 let html = generate_card_html(recipes[i])
                 pages[currentPage] += html
-                if ((i+1) % 10 == 0) {
+                if ((i+1) % 4 == 0) {
                     currentPage += 1
                     pages[currentPage] = ''
                 }

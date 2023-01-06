@@ -24,8 +24,6 @@ html, body {
     width: 16rem;
     cursor: pointer;
     text-align: center;
-    /* padding-top: 5%; */
-    /* margin-top: 2.5%; */
 }
 .card-header {
     height: 25px;
@@ -34,8 +32,8 @@ html, body {
     font-size: 25px;
 }
 .recipe-card-img {
-    height: 12rem;
-    max-height: 12rem;
+    height: 11rem;
+    max-height: 11rem;
 }
 
 #recipe-header {
