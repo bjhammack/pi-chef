@@ -56,8 +56,6 @@ function update_recipes_page(page) {
     var pages = JSON.parse(localStorage.pages);
     let currentPage = pages[page]
     document.getElementById('recipe-card-holder').innerHTML = currentPage
-    
-    return Object.keys(pages)
 }
 
 function generate_card_html(recipe) {
@@ -74,14 +72,47 @@ function generate_card_html(recipe) {
 }
 
 function paginate(pageId) {
-    var page = document.getElementById(pageId).innerHTML
+    if (['pagi-prev', 'pagi-next'].includes(pageId)) {
+        let pagis = ['pagi-1', 'pagi-2', 'pagi-3']
+        for (var i=0; i < pagis.length; i++) {
+            if (document.getElementById(pagis[i]).classList.contains('active')) {
+                if (pageId == 'pagi-next') {
+                    if (i == 2) {
+                        var page = String(Number(document.getElementById(pagis[i]).innerHTML) + 1)
+                    } else {
+                        var page = document.getElementById(pagis[i+1]).innerHTML
+                    } 
+                    var activePage = document.getElementById(pagis[i]).innerHTML
+                    break
+                } else {
+                    if (i == 0) {
+                        var page = String(Number(document.getElementById(pagis[i]).innerHTML) - 1)
+                    } else {
+                        var page = document.getElementById(pagis[i-1]).innerHTML
+                    } 
+                    var activePage = document.getElementById(pagis[i]).innerHTML
+                    break
+                }
+            }
+        }
+    } else {
+        var page = document.getElementById(pageId).innerHTML
+    }
+
     if (page < 1) {
         page = 1
     }
-    var pages = update_recipes_page(page)
-    pages.sort(compareNumbers)
-    if (page > pages.length) {
-        page = pages.length
+
+    // var pages = update_recipes_page(page)
+    var pages = Object.keys(JSON.parse(localStorage.pages))
+    let pageCount = pages.length
+    if (page > pageCount) {
+        page = String(pages.length)
+    }
+    if (page == activePage) {
+        return
+    } else {
+        update_recipes_page(page)
     }
 
     var html = generate_paginate_html(page, pages)
