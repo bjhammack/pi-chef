@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    background-color: aliceblue;
+  }
+
+#recipes {
+    display: block;
+    height: 100%;
+    background-color: aliceblue;
+}
+#recipe {
+    display: none;
+    height: 100%;
+    margin: 0px auto;
+}
+#new-recipe {
+    display: none;
+    height: 100%;
+    background-color: brown;
+}
+
+.recipe-card {
+    background-color: rgb(240, 240, 240);
+    width: 16rem;
+    cursor: pointer;
+    text-align: center;
+    /* padding-top: 5%; */
+    /* margin-top: 2.5%; */
+}
+.card-header {
+    height: 25px;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+.recipe-card-img {
+    height: 12rem;
+    max-height: 12rem;
+}
+
+#recipe-header {
+    text-align: center;
+}
+.exit {
+    padding-top: 15px;
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+#ingredients {
+    padding-left: 40%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#steps {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#ingredients-header{
+    text-align: center;
+}
+#steps-header{
+    text-align: center;
+}
+
+.close-btn{
+    float: right;
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    padding: 0px;
+}
+.close-btn i {
+    position: relative;
+    top: -1px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+  .recipes-nav {
+    padding-top: 30px;
+}
+
+.filter-contents {
+    display: inline-block;
+}
+.filter-text {
+    margin: 5px;
+}
+.filter-button {
+    background-color: aliceblue;
+    color: aliceblue;
+}
+
+.card-holder {
+    padding-top: 25px;
+    padding-left: 25px;
+}

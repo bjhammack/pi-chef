@@ -16,3 +16,9 @@ def recipe():
         recipe_id = args.get('recipe_id')
         recipe = dc.get_recipe(recipe_id)
     return jsonify(recipe)
+
+@app.route('/all_recipes', methods=['GET'])
+def all_recipes():
+    if request.method == 'GET':
+        recipes = dc.get_all_recipes()
+    return jsonify(recipes)
