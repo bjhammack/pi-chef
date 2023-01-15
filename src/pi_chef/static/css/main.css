@@ -21,7 +21,7 @@ html, body {
 
 .recipe-card {
     background-color: rgb(240, 240, 240);
-    width: 14rem;
+    width: 12rem;
     cursor: pointer;
     text-align: center;
     font-size: small;
