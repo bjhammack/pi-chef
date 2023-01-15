@@ -21,4 +21,5 @@ When the application is launched, data_controller.py is imported and is used to 
 This project is still a work in progress; several key features are still in the pipeline and need to be fully debugged and implemented.
 - The ability to add new recipes via the application itself.
 - The ability to edit and delete existing recipes.
-- A more attractive recipe view. The current one is very barebones and tacky. <img src="/assets/images/recipe_example.png" width=200 height=200>
+- A more attractive recipe view. The current one is very barebones and tacky.
+    - ![recipe](/assets/images/recipe_example.png)
